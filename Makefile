@@ -4,9 +4,11 @@ install:
 setup: requirements.txt
 	pip install -r requirements.txt
 
-lint: 
-	make lint
-	simple_function.py
+lint:
+	pylint --disable=R,C hello.py
+
+format:
+	black *.py
 
 test:
-	python -m pytest -vv --cov= hello test_simple_function.py
+	python -m pytest -vv --cov=hello test_simple_function.py
