@@ -5,4 +5,4 @@ lint:
 	pylint --disable=R,C simple_function.py
 
 test:
-	python -m pytest -vv --cov=simple_function test_simple_function.py
+	python -m pytest -vv test_simple_function.py
