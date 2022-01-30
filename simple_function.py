@@ -1,2 +1,5 @@
 def addition(a,b):
-    print(a+b)
+    '''
+    Simple addition function
+    '''
+    return a+b
